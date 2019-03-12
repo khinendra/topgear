@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scenario-3</title>
+</head>
+<style>
+     li    { 
+       list-style-type: none;
+	       background: grey; 
+        }
+       
+</style>
+<body>
+    <h2>The list of Employees: ID & name</h2>
+    <ul>
+      
+        <li class = "list">123446 - Amit Gupta</li>
+        <li class = "list">789012 - Alka Verama</li>
+        <li class = "list">345678 - Birendra Rajput</li>
+        <li class = "list">901234 - Kriti Irani</li>
+        <li class = "list">567890 - Ira Behera</li>
+        <li class = "list">234667 - Satish Lakhan</li>
+        <li class = "list">446789 - Tikaram Pandu</li>
+        <li class = "list">012345 - Xavier Abraham</li>
+        <li class = "list">678901 - Yuvraj Singh</li>
+        <li class = "list">890123 - Zandel Yadav</li>
+    </ul>
+<p id = "pid" hidden>Thats all</p>
+<script>
+function theLuckyOne() {
+    var listCount = document.querySelectorAll(".list");
+    var i;
+    for (i = 0; i < listCount.length; i++) {
+        var text1 = document.querySelectorAll(".list")[i].textContent;
+        if (text1.toString().lastIndexOf("5") >= 0) {
+            listCount[i].style.backgroundColor = "yellow";
+        }
+    }
+}
+document.getElementById("pid").innerHTML = theLuckyOne();
+</script>
+</body>
+</html>

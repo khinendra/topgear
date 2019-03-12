@@ -1,0 +1,21 @@
+p{
+    
+}
+div{
+    height: 500;
+    width: 500;
+    border: 2px dotted blue;
+    
+}
+div.d1{
+    background-color: cyan;
+    color:grey;
+}
+div.d2{
+    background-color: green;
+    color: white;
+    
+}
+.color{
+    background-color: magenta;
+}
